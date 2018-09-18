@@ -26,9 +26,11 @@
   padding-bottom: 20px;
   border-radius: 5px;
   left: 50%;
+  top: 20px;
   transform: translateX(-50%);
+  background: white;
   & .content-modal > *:last-child {
-//    padding-bottom: 50px;
+    //    padding-bottom: 50px;
   }
   &#hotel {
     .hotels-wrap {
@@ -113,7 +115,7 @@
   &.modal-big {
     width: 100%;
 
-    top: 20px;
+    top: 10px;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
     background: white;
 
@@ -186,7 +188,7 @@
       border-radius: 50px;
       padding-left: 45px;
       padding-right: 45px;
-      @media(max-width: 576px){
+      @media(max-width: 576px) {
         padding-left: 30px;
         padding-right: 30px;
       }
@@ -198,9 +200,92 @@
       margin-left: 10px;
       font-size: 35px;
       font-weight: 300;
-      &:hover{
+      &:hover {
         text-decoration: none;
       }
     }
   }
+
+
+  &#modal-order-fast {
+    background: #f2f2ef;
+    width: 600px;
+    max-width: 97%;
+    .top-row {
+      background: #f2f2ef;
+    }
+    .wrap-content {
+      padding-top: 0;
+      padding-right: 67px;
+    }
+    .inputs-wrap input {
+      width: 100%;
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .btn-submit {
+      margin-top: 20px;
+      margin-left: auto;
+    }
+  }
+
+  &#modal-order-big {
+
+    .content-modal {
+      background-color: #F8F8F7;
+    }
+
+
+
+
+    @media(min-width: 768px) {
+      $outer-width: 660;
+    }
+
+    @media(min-width: 992px) {
+      $outer-width: 860;
+    }
+
+    @media(min-width: 1200px) {
+      $outer-width: 1100;
+    }
+    .inputs-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      $margin-right: 20;
+      $count: 2;
+      input,
+      select {
+        $count: 2; //      width: ($outer-width -  $margin-right*($count - 1));
+        margin-bottom: 15px;
+        margin-right: $margin-right + px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        @media (max-width: 575px) {
+          width: 100%;
+          margin-right: 0;
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+          width: (440 - $margin-right*($count - 1))/2 + px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+          width: (645 - $margin-right*($count - 1))/2 + px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+          width: (860 - $margin-right*($count - 1))/2 + px;
+        }
+        @media (min-width: 1200px) {
+          width: (1080 - $margin-right*($count - 1))/2 + px;
+        }
+
+      }
+    }
+  }
+
 }

@@ -146,7 +146,7 @@
               <a href="" class="geo-block"></a>
             </div>
             <div class="info-block">
-            
+
               <table>
                 <tbody>
                   <tr>
@@ -516,6 +516,10 @@
 
   </footer>
   <input type="button" value="модалка" class="show-modal" data-id="hotel">
+  <input type="button" value="заказать в 1 клик" class="show-modal" data-id="modal-order-fast">
+  <input type="button" value="заказать" class="show-modal" data-id="modal-order-big">
+
+
   <div class="my-modal modal-big" id="hotel">
     <div class="top-row">
       <div class="close-modal">&#215;</div>
@@ -639,6 +643,56 @@
     <div class="button-row">
       <input type="button" class="btn-primary btn-order" value="заказать">
       <input type="button" class="btn-primary close-modal" value="&#215;">
+    </div>
+  </div>
+
+
+  <div class="my-modal" id="modal-order-fast">
+    <div class="top-row">
+      <div class="close-modal">&#215;</div>
+    </div>
+    <div class="content-modal">
+      <div class="wrap-content">
+        <div class="subtitle-2">заказать в один клик</div>
+        <div class="inputs-wrap">
+          <input type="text" placeholder="Ваше имя">
+          <input type="tel" placeholder="Номер телефона">
+        </div>
+        <input type="submit" class="btn-primary btn-submit" value="позвоните мне">
+      </div>
+    </div>
+  </div>
+
+  <div class="my-modal modal-big" id="modal-order-big">
+    <div class="top-row">
+      <div class="close-modal">&#215;</div>
+    </div>
+    <div class="content-modal">
+      <div class="wrap-content">
+        <div class="subtitle-2">заказать</div>
+        <div class="inputs-wrap">
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Даты">
+
+          <input type="tel" placeholder="Номер телефона">
+          <input type="text" placeholder="Количество взрослых">
+          <input type="email" placeholder="email">
+          <input type="text" placeholder="Кол-во детей до 12 лет">
+          <select name="" id="">
+            <option value="" selected>Выберите гостиницу из списка</option>
+            <option value="">гостиница 1</option>
+            <option value="">гостиница 2</option>
+            <option value="">помогите мне выбрать отель!</option>                        
+          </select>
+          <input type="text" placeholder="ФИО туристов">
+          <textarea name="" id=""></textarea>
+        </div>
+
+
+      </div>
+      <div class="button-row">
+        <input type="submit" class="btn-primary btn-submit" value="отправить">
+      </div>
     </div>
   </div>
 

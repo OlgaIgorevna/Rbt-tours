@@ -1,0 +1,60 @@
+input[type="text"], input[type="tel"], input[type="email"], select {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  height: 45px;
+  border: none;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+
+  &:focus{
+    outline: none;
+  }
+  &:hover{
+    cursor: text;
+    text-decoration: none;
+  }
+
+}
+select{
+   -webkit-appearance: none;
+  background-image: url("../img/select-bg.png");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  padding: 5px 15px;
+  padding-right: 40px;
+ 
+}
+
+input[placeholder] {
+  color: $font-color;
+}
+
+textarea{
+  width: 100%;
+  resize: none;
+  min-height: 100px;
+  border: none;
+  border-radius: 5px;
+   background: white;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  &:focus{
+    outline: none;
+  }
+  
+}
+
+::-webkit-input-placeholder {color: $font-color;}
+::-moz-placeholder          {color: $font-color;}/* Firefox 19+ */
+:-moz-placeholder           {color: $font-color;}/* Firefox 18- */
+:-ms-input-placeholder      {color: $font-color;}
