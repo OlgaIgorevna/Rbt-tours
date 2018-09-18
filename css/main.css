@@ -1122,6 +1122,15 @@ body * {
                 flex-basis: 50%;
         max-width: 330px; } }
   .hotels-wrap .item .info-part {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
@@ -1183,11 +1192,24 @@ body * {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       padding: 25px 35px; }
+      .hotels-wrap .item .info-part .info-block table {
+        border: none;
+        border-collapse: collapse; }
+        .hotels-wrap .item .info-part .info-block table * {
+          border: none; }
+        .hotels-wrap .item .info-part .info-block table td {
+          padding: 7px 5px;
+          font-weight: 500; }
       .hotels-wrap .item .info-part .info-block .line {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1226,7 +1248,11 @@ body * {
         -webkit-box-pack: end;
         -webkit-justify-content: flex-end;
             -ms-flex-pack: end;
-                justify-content: flex-end; }
+                justify-content: flex-end;
+        -webkit-box-flex: 1;
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
       @media (max-width: 1199px) {
         .hotels-wrap .item .info-part .info-block {
           display: -webkit-box;
