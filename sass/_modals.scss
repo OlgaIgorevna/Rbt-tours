@@ -288,4 +288,102 @@
     }
   }
 
+	&#add-review{
+		.top-row{
+			background-color: #f2f2ef;
+		}
+		.wrap-content, .grey-block{
+			padding-top: 0;
+		}
+		.grey-block{
+			padding: 0;
+		}
+		background-color: 	#f2f2ef;	
+		input[type="text"]{
+			width: 100%;
+			max-width: 500px;
+			margin-bottom: 15px;
+		}
+		
+		.row-bottom{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 20px;
+			.left-part{
+				flex-basis: 25%
+			}
+			.right-part{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				flex-basis: 50%;
+				display: flex;
+				input{
+					margin-left: 15px;
+				}
+			}
+			.captcha{
+				width: 280px;
+				height: 60px;
+				border: 1px solid black;
+			}
+			.label{
+				margin-bottom: 10px;
+			}
+			@media(min-width: 992px) and (max-width: 1199px){
+				.left-part{
+					flex-basis: auto
+				}
+				.right-part{
+					flex-basis: auto
+				}
+			}
+				@media(min-width: 768px) and (max-width: 991px){
+				.left-part{
+					flex-basis: auto;
+					margin-bottom: 10px;
+				}
+				.right-part{
+					flex-basis: auto
+				}
+			}
+			
+			@media(max-width: 767px){
+				& >*{
+					flex-basis: 100%;										
+				}
+				.left-part{
+					margin-bottom: 10px;	
+				}
+				.btn-submit{
+					margin-top: 10px;
+				}
+				.wrap-content{
+					padding-bottom: 0;
+				}
+				input.btn-submit{
+					margin-left: 0;
+				}
+			}
+			
+		}
+//		
+//						<div class="row-bottom">
+//							<div class="left-part">
+//								<div class="wrap-photo-select">
+//									<div class="label">Фото</div>
+//									<input type="file">
+//								</div>
+//							</div>
+//							<div class="right-part">
+//								<div class="captcha"></div>
+//								<input type="submit" class="btn-primary btn-submit" value="добавить отзыв">
+//							</div>
+//						</div>
+
+		
+		
+	}
+	
 }

@@ -759,3 +759,163 @@ ol {
 	margin: 25px 0;
 	border-radius: 5px;
 }
+
+
+.container-reviews .item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.container-reviews .name-block {
+	display: flex;
+	width: 170px;
+	max-width: 170px;
+	flex-shrink: 0;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 20%;
+
+}
+
+.container-reviews .foto-user {
+
+	display: block;
+	width: 70px;
+	height: 70px;
+
+	background-color: $main-color;
+	background-image: url(../img/icon-review.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: bottom;
+	border-radius: 50%;
+}
+
+
+
+.review-block {
+	background: #f2f2ef;
+	padding: 20px;
+	border-radius: 10px;
+	line-height: 20px;
+	flex-basis: 80%;
+
+}
+
+.review-block::before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top: 20px solid #f2f2ef;
+	border-right: 20px solid #f2f2ef;
+	position: absolute;
+	left: -35px;
+}
+
+.container-reviews form {
+	padding: 0 20px;
+}
+
+.container-reviews input[type="text"],
+.container-reviews textarea {
+
+	border: 1px solid #e5e6e6;
+	height: 40px;
+	padding: 10px 40px 10px 15px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.container-reviews input[type="file"] {
+	max-width: 250px;
+}
+
+.container-reviews textarea {
+	resize: none;
+	width: 100%;
+	min-height: 200px;
+}
+
+.container-reviews .line {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.container-reviews .line .field-name {
+	margin-right: 20px;
+	width: 120px;
+	flex-shrink: 0;
+}
+
+.container-reviews .item-form {
+	margin-bottom: 15px;
+}
+
+.container-reviews .textarea-line {
+	align-items: flex-start;
+}
+
+.left-part.row .logo-name .text {
+	max-width: 215px;
+}
+
+
+@media(max-width: 767px) {
+	.container-reviews .item {
+		margin-bottom: 20px;
+		flex-direction: column;
+	}
+	.container-reviews .name-block {
+		flex-basis: auto;
+		margin-bottom: 20px;
+	}
+
+	.review-block {
+		flex-basis: auto;
+	}
+	.review-block::before {
+		display: none;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+	.reviews .name-block {
+		flex-basis: 30%;
+		margin-bottom: 20px;
+	}
+
+
+
+	.review-block {
+		flex-basis: 70%;
+	}
+	.review-block::before {
+		display: block;
+	}
+
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.container-reviews .name-block {
+		flex-basis: 25%;
+		margin-bottom: 20px;
+	}
+	.review-block {
+		flex-basis: 75%;
+	}
+}
+
+.btn-add-review {
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+
+

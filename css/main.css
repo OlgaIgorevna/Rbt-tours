@@ -554,6 +554,9 @@ footer {
   -webkit-border-radius: 50%;
           border-radius: 50%; }
 
+.slider-photo .wrap-item:hover {
+  cursor: pointer; }
+
 .slider-photo,
 .slider-modal {
   margin-top: 30px;
@@ -896,6 +899,91 @@ footer {
         .my-modal#modal-order-big .inputs-wrap input,
         .my-modal#modal-order-big .inputs-wrap select {
           width: 530px; } }
+  .my-modal#add-review {
+    background-color: #f2f2ef; }
+    .my-modal#add-review .top-row {
+      background-color: #f2f2ef; }
+    .my-modal#add-review .wrap-content, .my-modal#add-review .grey-block {
+      padding-top: 0; }
+    .my-modal#add-review .grey-block {
+      padding: 0; }
+    .my-modal#add-review input[type="text"] {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 15px; }
+    .my-modal#add-review .row-bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top: 20px; }
+      .my-modal#add-review .row-bottom .left-part {
+        -webkit-flex-basis: 25%;
+            -ms-flex-preferred-size: 25%;
+                flex-basis: 25%; }
+      .my-modal#add-review .row-bottom .right-part {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-flex-basis: 50%;
+            -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+        display: flex; }
+        .my-modal#add-review .row-bottom .right-part input {
+          margin-left: 15px; }
+      .my-modal#add-review .row-bottom .captcha {
+        width: 280px;
+        height: 60px;
+        border: 1px solid black; }
+      .my-modal#add-review .row-bottom .label {
+        margin-bottom: 10px; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .my-modal#add-review .row-bottom .left-part {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; }
+        .my-modal#add-review .row-bottom .right-part {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .my-modal#add-review .row-bottom .left-part {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto;
+          margin-bottom: 10px; }
+        .my-modal#add-review .row-bottom .right-part {
+          -webkit-flex-basis: auto;
+              -ms-flex-preferred-size: auto;
+                  flex-basis: auto; } }
+      @media (max-width: 767px) {
+        .my-modal#add-review .row-bottom > * {
+          -webkit-flex-basis: 100%;
+              -ms-flex-preferred-size: 100%;
+                  flex-basis: 100%; }
+        .my-modal#add-review .row-bottom .left-part {
+          margin-bottom: 10px; }
+        .my-modal#add-review .row-bottom .btn-submit {
+          margin-top: 10px; }
+        .my-modal#add-review .row-bottom .wrap-content {
+          padding-bottom: 0; }
+        .my-modal#add-review .row-bottom input.btn-submit {
+          margin-left: 0; } }
 
 input[type="text"], input[type="tel"], input[type="email"], select {
   display: -webkit-box;
@@ -1769,3 +1857,177 @@ ol {
   margin: 25px 0;
   -webkit-border-radius: 5px;
           border-radius: 5px; }
+
+.container-reviews .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+
+.container-reviews .name-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  max-width: 170px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-basis: 20%;
+      -ms-flex-preferred-size: 20%;
+          flex-basis: 20%; }
+
+.container-reviews .foto-user {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #f45472;
+  background-image: url(../img/icon-review.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  background-position: bottom;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.review-block {
+  background: #f2f2ef;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  line-height: 20px;
+  -webkit-flex-basis: 80%;
+      -ms-flex-preferred-size: 80%;
+          flex-basis: 80%; }
+
+.review-block::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #f2f2ef;
+  border-right: 20px solid #f2f2ef;
+  position: absolute;
+  left: -35px; }
+
+.container-reviews form {
+  padding: 0 20px; }
+
+.container-reviews input[type="text"],
+.container-reviews textarea {
+  border: 1px solid #e5e6e6;
+  height: 40px;
+  padding: 10px 40px 10px 15px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  outline: none; }
+
+.container-reviews input[type="file"] {
+  max-width: 250px; }
+
+.container-reviews textarea {
+  resize: none;
+  width: 100%;
+  min-height: 200px; }
+
+.container-reviews .line {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container-reviews .line .field-name {
+  margin-right: 20px;
+  width: 120px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+
+.container-reviews .item-form {
+  margin-bottom: 15px; }
+
+.container-reviews .textarea-line {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.left-part.row .logo-name .text {
+  max-width: 215px; }
+
+@media (max-width: 767px) {
+  .container-reviews .item {
+    margin-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .container-reviews .name-block {
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    margin-bottom: 20px; }
+  .review-block {
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto; }
+  .review-block::before {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .reviews .name-block {
+    -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+    margin-bottom: 20px; }
+  .review-block {
+    -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+            flex-basis: 70%; }
+  .review-block::before {
+    display: block; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container-reviews .name-block {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+    margin-bottom: 20px; }
+  .review-block {
+    -webkit-flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%; } }
+
+.btn-add-review {
+  margin-left: auto;
+  margin-bottom: 20px; }
