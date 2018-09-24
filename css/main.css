@@ -1702,9 +1702,70 @@ body * {
         .advantages .f-row .item .text-block .title {
           margin-bottom: 10px; } }
 
+.text-page .row-2blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .text-page .row-2blocks > * {
+    -webkit-flex-basis: 49%;
+        -ms-flex-preferred-size: 49%;
+            flex-basis: 49%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 0; }
+    @media (max-width: 1199px) {
+      .text-page .row-2blocks > * {
+        padding-top: 20px;
+        padding-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .text-page .row-2blocks > * {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%; }
+        .text-page .row-2blocks > * .left-block {
+          margin-bottom: 20px; } }
+  .text-page .row-2blocks .left-block {
+    background-image: url("../img/flag.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+    background-position: right top; }
+    .text-page .row-2blocks .left-block .text {
+      text-transform: uppercase;
+      font-weight: 700; }
+      .text-page .row-2blocks .left-block .text a {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline;
+        color: red; }
+    .text-page .row-2blocks .left-block .img-block {
+      margin-bottom: 20px;
+      overflow: hidden; }
+      .text-page .row-2blocks .left-block .img-block img {
+        max-width: 160px;
+        max-height: 100px; }
+
 .text-page ul:not(.slick-dots) {
   list-style-type: none; }
   .text-page ul:not(.slick-dots) li::before {
     content: ">";
     display: inline-block;
     margin-right: 10px; }
+
+ol {
+  margin-left: 15px; }
+
+.grey-block {
+  background-color: #f2f2ef;
+  padding: 25px 20px;
+  margin: 25px 0;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }

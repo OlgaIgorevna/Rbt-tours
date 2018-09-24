@@ -3,6 +3,8 @@ $(window).on("load", function () {
 	var sl_elem = "";
 
 	$(".slider-photo .wrap-item").on("click", function (e) {
+		
+//		console.log("target" + e.target);
 
 		count++;
 
