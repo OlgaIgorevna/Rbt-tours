@@ -91,7 +91,7 @@ header {
   .menu-top {
     background-color: $main-color;
     padding: 10px 0;
-    z-index: 2;
+    z-index: 12;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.4);
 
     ul {
@@ -134,7 +134,7 @@ header {
   }
   .menu-secondary-top {
     background-color: $main-color;
-    z-index: 2;
+    z-index: 11;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.4);
 
 
