@@ -334,10 +334,10 @@ header .banner-main-page {
     color: white; }
   header .banner-main-page::after {
     background: transparent;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 100, 191, 0.8)), to(rgba(0, 0, 0, 0.1)));
-    background: -webkit-linear-gradient(right, rgba(0, 100, 191, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
-    background: -o-linear-gradient(right, rgba(0, 100, 191, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
-    background: linear-gradient(to left, rgba(0, 100, 191, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), color-stop(30%, rgba(218, 215, 215, 0.4)), color-stop(70%, rgba(218, 215, 215, 0.4)), to(rgba(0, 0, 0, 0.1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1), rgba(218, 215, 215, 0.4) 30%, rgba(218, 215, 215, 0.4) 70%, rgba(0, 0, 0, 0.1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.1), rgba(218, 215, 215, 0.4) 30%, rgba(218, 215, 215, 0.4) 70%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(218, 215, 215, 0.4) 30%, rgba(218, 215, 215, 0.4) 70%, rgba(0, 0, 0, 0.1) 100%);
     content: "";
     display: block;
     height: 100%;
